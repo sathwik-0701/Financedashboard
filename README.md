@@ -1,6 +1,6 @@
 # Finance Dashboard
 
-Live URL : financedashboardui-nu.vercel.app
+Live URL : https://financedashboardui-nu.vercel.app/login
 
 ## Overview
 
