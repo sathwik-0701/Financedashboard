@@ -1,0 +1,110 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Finance Dashboard API",
+  "dateExported": "2026-06-22T05:00:00.000Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "name": "1. Health Check",
+      "url": "http://localhost:5000/api/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "headers": []
+    },
+    {
+      "name": "2. Register",
+      "url": "http://localhost:5000/api/auth/register",
+      "method": "POST",
+      "sortNum": 20000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Test User\",\n  \"email\": \"testuser_thunder@example.com\",\n  \"password\": \"password123\"\n}"
+      }
+    },
+    {
+      "name": "3. Verify Email",
+      "url": "http://localhost:5000/api/auth/verify-email?token=PASTE_TOKEN_HERE&email=testuser_thunder@example.com",
+      "method": "GET",
+      "sortNum": 30000,
+      "headers": []
+    },
+    {
+      "name": "4. Resend Verification",
+      "url": "http://localhost:5000/api/auth/resend-verification",
+      "method": "POST",
+      "sortNum": 40000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"testuser_thunder@example.com\"\n}"
+      }
+    },
+    {
+      "name": "5. Login",
+      "url": "http://localhost:5000/api/auth/login",
+      "method": "POST",
+      "sortNum": 50000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"testuser_thunder@example.com\",\n  \"password\": \"password123\"\n}"
+      }
+    },
+    {
+      "name": "6. Get Me (Current User)",
+      "url": "http://localhost:5000/api/auth/me",
+      "method": "GET",
+      "sortNum": 60000,
+      "headers": []
+    },
+    {
+      "name": "7. Forgot Password",
+      "url": "http://localhost:5000/api/auth/forgot-password",
+      "method": "POST",
+      "sortNum": 70000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"testuser_thunder@example.com\"\n}"
+      }
+    },
+    {
+      "name": "8. Reset Password",
+      "url": "http://localhost:5000/api/auth/reset-password",
+      "method": "POST",
+      "sortNum": 80000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"testuser_thunder@example.com\",\n  \"token\": \"PASTE_RESET_TOKEN_HERE\",\n  \"password\": \"newpassword123\"\n}"
+      }
+    },
+    {
+      "name": "9. Logout",
+      "url": "http://localhost:5000/api/auth/logout",
+      "method": "POST",
+      "sortNum": 90000,
+      "headers": []
+    },
+    {
+      "name": "10. Get Transactions",
+      "url": "http://localhost:5000/api/transactions",
+      "method": "GET",
+      "sortNum": 100000,
+      "headers": []
+    },
+    {
+      "name": "11. Create Transaction",
+      "url": "http://localhost:5000/api/transactions",
+      "method": "POST",
+      "sortNum": 110000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Freelance Design Work\",\n  \"amount\": 1500,\n  \"category\": \"Salary\",\n  \"type\": \"income\",\n  \"date\": \"2026-06-22T00:00:00.000Z\"\n}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "finance-dashboard-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix server",
+    "frontend": "npm start --prefix frontend",
+    "server": "npm start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "dev": "concurrently -n CLIENT,SERVER -c blue,green \"npm run frontend\" \"npm run server:dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
