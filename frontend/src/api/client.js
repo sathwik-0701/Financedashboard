@@ -1,6 +1,6 @@
 // Base URL of the backend API. Configure via .env (REACT_APP_API_URL) for
 // production; defaults to the local Express server during development.
-export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+export const API_BASE_URL = 'https://financedashboard-1-h9u6.onrender.com/api';
 
 /**
  * Thin wrapper around fetch that:
