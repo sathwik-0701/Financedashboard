@@ -10,7 +10,7 @@ const transactionRoutes = require('./routes/transactionRoutes');
 const app = express();
 
 // Allow one or more comma-separated origins in CLIENT_URL
-const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:3000')
+const allowedOrigins = ['https://financedashboardui-nu.vercel.app'];
   .split(',')
   .map((o) => o.trim())
   .filter(Boolean);
